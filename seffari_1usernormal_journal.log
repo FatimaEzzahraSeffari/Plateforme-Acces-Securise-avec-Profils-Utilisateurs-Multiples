@@ -1,0 +1,33 @@
+SQL> create user c##seffari_user_normal identified by user123;
+
+Utilisateur créé.
+
+SQL> GRANT CREATE SESSION TO  c##seffari_user_normal;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> connect
+Entrez le nom utilisateur : c##seffari_user_normal
+Connecté.
+SQL> select * from c##seffari_admin.club;
+
+        ID NAME            PRESIDENT       DESCRIPTION                          
+---------- --------------- --------------- ------------------------------       
+         1 LIONS           fati            The UEMF Lions Club                  
+         2 AIKIDOU         fati            The UEMF aikidou Club                
+         3 PHOTOGRAPHIE    fati            The UEMF PHOTOGRAPHIE Club           
+         4 picture         marwa           The UEMF Picture Club                
+         5 kickboxing      ilhame          The kickboxing Club                  
+         6 DIGICLUB        ilhame          The DIGI Club                        
+         7 GAMING          fatimaezzahra   The gaming Club                      
+         8 ECHECS          fatimaezzahra   The ECHECS Club                      
+
+8 lignes sélectionnées.
+
+SQL> select * from c##seffari_admin.users;
+
+USERNAME        PASSWORD                                                        
+--------------- ---------------                                                 
+seffariuser     user123                                                         
+
+SQL> spool off

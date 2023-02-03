@@ -1,0 +1,251 @@
+SQL> create user c##seffari_admin identified by fati123;
+
+Utilisateur créé.
+
+SQL>  grant all privileges to c##seffari_admin;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> connect
+Entrez le nom utilisateur : c##seffari_admin
+Connecté.
+SQL> show user
+USER est "C##SEFFARI_ADMIN"
+SQL> create table admins(
+  2  username varchar(15),
+  3  password varchar(15)
+  4  );
+
+Table créée.
+
+SQL> insert into admins(username,password)values('seffariadmin','admin123');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL> create table clubstudent(
+  2  id number(10),
+  3  firstname varchar(15),
+  4  lastname varchar(15),
+  5  phone_number number(16),
+  6   school varchar(15),
+  7   interest varchar(15),
+  8   club varchar(15)
+  9  );
+
+Table créée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(1,'fatimaezzahra','seffari','0614789632','EIDIA','SPORT','AIKIDOU');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(2,'ilhame','seffari','0665751842','EPS','MUSIQUE','PHOTGRAPHIE');
+
+1 ligne créée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(3,'soufiane','seffari','0665755642','EIDIA','VIDEOGAME','lecture');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(4,'hamza','seffari','06147896572','EMADU','SPORT','LIONS');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(5,'marwa','seffari','0665755842','EPS','VIDEOGAME','GAMING');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL>  insert into clubstudent(id,firstname,lastname,phone_number,school,interest,club)values(6,'nora','seffari','06147896572','EDIA','PROGRAMMING','DIGICLUB');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL> insert into admins(username,password)values('fatimaezzahra','123');
+
+1 ligne créée.
+
+SQL> insert into admins(username,password)values('fatimaseffari','1234');
+
+1 ligne créée.
+
+SQL> insert into admins(username,password)values('seffari','1234');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL> insert into admins(username,password)values('fatimaezzahraseffari','fati123');
+insert into admins(username,password)values('fatimaezzahraseffari','fati123')
+                                            *
+ERREUR à la ligne 1 :
+ORA-12899: valeur trop grande pour la colonne 
+"C##SEFFARI_ADMIN"."ADMINS"."USERNAME" (réelle : 20, maximum : 15) 
+
+
+SQL> insert into admins(username,password)values('marwa','fati123');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL>  create table club(
+  2   id number(10),
+  3   name varchar(15),
+  4  president varchar(15),
+  5  description varchar(30)
+  6  );
+
+Table créée.
+
+SQL>  insert into club (id,name,president,description)values(1,'LIONS','fati','The UEMF Lions Club');
+
+1 ligne créée.
+
+SQL> insert into club (id,name,president,description)values(2,'AIKIDOU','fati','The UEMF aikidou Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(3,'PHOTOGRAPHIE','fati','The UEMF PHOTOGRAPHIE Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(4,'picture','marwa','The UEMF Picture Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(5,'kickboxing','ilhame','The kickboxing Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(6,'DIGICLUB','ilhame','The DIGI Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(7,'GAMING','fatimaezzahra','The gaming Club');
+
+1 ligne créée.
+
+SQL>  insert into club (id,name,president,description)values(8,'ECHECS','fatimaezzahra','The ECHECS Club');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL> select*from admins;
+
+USERNAME        PASSWORD                                                        
+--------------- ---------------                                                 
+seffariadmin    admin123                                                        
+fatimaezzahra   123                                                             
+fatimaseffari   1234                                                            
+seffari         1234                                                            
+marwa           fati123                                                         
+
+SQL>  select*from clubstudent;
+
+        ID FIRSTNAME       LASTNAME        PHONE_NUMBER SCHOOL                  
+---------- --------------- --------------- ------------ ---------------         
+INTEREST        CLUB                                                            
+--------------- ---------------                                                 
+         1 fatimaezzahra   seffari            614789632 EIDIA                   
+SPORT           AIKIDOU                                                         
+                                                                                
+         2 ilhame          seffari            665751842 EPS                     
+MUSIQUE         PHOTGRAPHIE                                                     
+                                                                                
+         3 soufiane        seffari            665755642 EIDIA                   
+VIDEOGAME       lecture                                                         
+                                                                                
+
+        ID FIRSTNAME       LASTNAME        PHONE_NUMBER SCHOOL                  
+---------- --------------- --------------- ------------ ---------------         
+INTEREST        CLUB                                                            
+--------------- ---------------                                                 
+         4 hamza           seffari           6147896572 EMADU                   
+SPORT           LIONS                                                           
+                                                                                
+         5 marwa           seffari            665755842 EPS                     
+VIDEOGAME       GAMING                                                          
+                                                                                
+         6 nora            seffari           6147896572 EDIA                    
+PROGRAMMING     DIGICLUB                                                        
+                                                                                
+
+6 lignes sélectionnées.
+
+SQL>  select*from club;
+
+        ID NAME            PRESIDENT       DESCRIPTION                          
+---------- --------------- --------------- ------------------------------       
+         1 LIONS           fati            The UEMF Lions Club                  
+         2 AIKIDOU         fati            The UEMF aikidou Club                
+         3 PHOTOGRAPHIE    fati            The UEMF PHOTOGRAPHIE Club           
+         4 picture         marwa           The UEMF Picture Club                
+         5 kickboxing      ilhame          The kickboxing Club                  
+         6 DIGICLUB        ilhame          The DIGI Club                        
+         7 GAMING          fatimaezzahra   The gaming Club                      
+         8 ECHECS          fatimaezzahra   The ECHECS Club                      
+
+8 lignes sélectionnées.
+
+SQL> grant select on club to c##seffari_user_normal;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> 
+SQL> grant select on club to c##seffari_user_normal;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> grant select on club to c##seffari_user_normal;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> create table users(
+  2  username varchar(15),
+  3  password varchar(15)
+  4  );
+
+Table créée.
+
+SQL> insert into users (username,password)values('seffariuser','user123');
+
+1 ligne créée.
+
+SQL> commit;
+
+Validation effectuée.
+
+SQL> grant select on users to c##seffari_user_normal;
+
+Autorisation de privilèges (GRANT) acceptée.
+
+SQL> spool off
