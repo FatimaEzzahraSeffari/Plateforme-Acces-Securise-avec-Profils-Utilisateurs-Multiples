@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/styles1.css" />
+<br><br>
+<section>
+<header>
+   <center> <h1>Users table</h1></center>
+</header>
+
+  
+   
+    <table class="vitamins">
+
+    
+        <thead>
+          
+            <tr>
+               
+                <th>Username</th>
+                <th>Password</th>
+            
+            </tr>
+        </thead>
+  
+   
+       <tfoot>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+       </tfoot>
+    </div>
+
+     <div class="tbl-content">
+        
+            <tbody>
+              
+                <tr>
+                 
+                    <% for (let i = 0; i < data.length; i++) { %>
+                        <td><%= data[i][0] %></td>
+                        <td><%= data[i][1] %></td>
+                       
+                        
+
+                    
+
+                </tr>
+                <% }%>
+            </tbody>
+        </table>
+
+    </div> 
+</section>
+
+<br><br>
+     
+<br><br><br><br>
+<center><a href="/data1" class="next">Next &raquo;</a></center>
+ 

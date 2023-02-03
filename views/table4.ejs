@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/styles1.css" >
+<br><br>
+        <header>
+            <center> <h1>club table</h1></center>
+         </header>
+         
+           
+            
+             <table class="vitamins">
+         
+                 <center> 
+                 <thead>
+                     <tr>
+                         <th>id</th>
+                         <th>name</th>
+                         <th>president</th>
+                         <th>description</th>
+                        
+                       
+                      
+                        
+                     </tr>
+                 </thead>
+             </center>
+         
+            
+                <tfoot>
+                 <tr>
+                     <td colspan="4"></td>
+                 </tr>
+                </tfoot>
+             </div>
+         
+              <div class="tbl-content">
+                 
+                     <tbody>
+                       
+                         <tr>
+                             <% for (let i = 0; i < data.length; i++) { %>
+                                 <td><%= data[i][0] %></td>
+                                 <td><%= data[i][1] %></td>
+                                 <td><%= data[i][2] %></td>
+                                 <td><%= data[i][3] %></td>
+                                
+                                 
+         
+                               
+         
+                         </tr>
+                         <% }%>
+                     </tbody>
+                 </table>
+        
+    </div> 
+    </section>
+<br><br>
+    <center>  <a href="/" class="next">go to home page &raquo;</a></center>

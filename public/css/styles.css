@@ -1,0 +1,224 @@
+*
+{
+/*   height: 100vh; */
+/*   width: 100vw; */
+    
+/*   overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , sans-serif;
+}
+
+body{
+  background: url(https://images.pexels.com/photos/2289236/pexels-photo-2289236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fab{
+  size: 50px;  
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    
+
+/*     background-position: center; */
+/*     background-size: cover; */
+/*     position: absolute; */
+    
+    
+}
+
+.area
+{ 
+    height: 500px;
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;    
+    box-shadow: 0 0 10px 0.5px black;
+}
+
+.btn{
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: none;
+/*   size: 50%; */
+  background: transparent;
+  box-shadow: 0 0 5px 1px #fff;
+}
+.twt{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.goo{
+  position: absolute;
+  bottom: 50px;
+  left: 160px;
+}
+.fb{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.btn:hover{
+/*   color: black;
+  background-color: white; */
+  
+}
+
+/* .button
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 1px #dff9fb
+    ;
+    border-radius: 30px;
+} */
+
+
+input::placeholder{
+  color: rgba(236, 240, 241, 0.5);
+}
+.abc
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative;   
+}
+.text{
+  color: rgba(236, 240, 241, 0.8);
+}
+
+
+.media
+{
+    
+}
+
+/* .media img
+{
+    margin: 350 18px;
+    width: 50px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 20px;
+} */
+
+.input
+{
+    position: absolute;
+    top: 120px;
+    width: 300px;
+    transition: 0.5s;
+
+}
+
+.credentials
+{
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 0;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    background: transparent;
+}
+
+.ok
+{
+    box-shadow: 0 0 5px 1px #fff;
+   position: relative;
+   padding: 10px 30px;
+   width: 80%;
+   cursor: pointer;
+   margin-left: 35px;
+   margin-top: 25px;
+   border: 0;
+   outline: none;
+/*    background: linear-gradient(to right, #ff105f, #ffbe76); */
+  background: transparent;
+   border-radius: 30px;
+   color: #fff
+/*      .ok {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+  .ok {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.ok:before,
+.ok:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.ok:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.ok:hover:before,
+.ok:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+ */
+}
+
+.box
+{
+    margin: 30px 10px 30px 0;
+}
+
+.span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 70px;
+    position: absolute;
+}
+
+#first
+{
+    left: 50px;
+}
+
+#second
+{
+    left: 450px;
+}
+.ok:hover{
+  transition: 0.5s;
+}
